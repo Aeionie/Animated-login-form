@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@500&family=Poppins&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100vh;
+  font-family: 'poppins', sans-serif;
+  background: linear-gradient(to right, #99004D 0%, #ff0080 100%);
+}
+
+.container {
+  width: 100%;
+  max-width: 350px;
+  background-color: #fff;
+  border-radius: 4px;
+  padding:25px 30px ;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+.container .title {
+  font-size: 29px;
+  margin: 10px 0 20px 0;
+  font-weight: 600;
+  position: relative;
+}
+
+.container .title::before {
+  content: '';
+  position: absolute;
+  width: 29px;
+  height: 4px;
+  background: linear-gradient(to right, #99004D 0%, #ff0080 100%);
+  left: 0;
+  top: 35px;
+}
+
+.container .input-box {
+  width: 100%;
+  height: 45px;
+  margin: 20px 0;
+  position: relative;
+
+}
+
+.container .input-box input {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+
+.container .input-box input ~.underline {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #99004D 0%, #ff0080 100%);
+  top: 38px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all 0.3s ease;
+}
+.container .input-box input:focus ~ .underline{
+  transform: scaleX(1);
+  background: linear-gradient(to right, #99004D 0%, #ff0080 100%);
+}
+.container .submit-button{
+  margin: 40px 0 20px 0;
+
+}
+.container  input[type="submit"]{
+  width: 100%;
+  height:45px;
+  font-size: 18px;
+  background: linear-gradient(to right,#99004D 0%,#ff0080 100%);
+  border: none;
+  outline: none;
+  color:#fff;
+  border-radius:4px;
+}
+.container input[type="submit"]:hover{
+  letter-spacing:2px;
+  background: linear-gradient(to left, #99004D 0%, #ff0080 100%);
+}
+.container .option{
+  text-align: center;
+  margin-bottom:20px;
+}
+
+.container .x a,
+.container .facebook a{
+  display: flex;
+  gap:10px;
+  width:100%;
+  height: 45px;
+  padding-left: 20px;
+  place-items: center;
+  text-decoration: none;
+  font-size: 16px;
+  color:#fff;
+  border-radius:4px ;
+}
+.container .x a{
+  margin: 10px 0 20px 0 ;
+  background: linear-gradient(to left,#1b1c1d 0%,#012431 100%);
+}
+.container .x a:hover{
+  background: linear-gradient(to left,#1b1c1d 0%,#014f6b 100%);
+}
+.container .facebook a{
+  margin: 10px 0 30px 0 ;
+  background: linear-gradient(to left,#3b5998 0%,#476bb8 100%);
+}
+.container .facebook a:hover{
+  background: linear-gradient(to right, #3b5998 0%,#00acee 100%);
+}
